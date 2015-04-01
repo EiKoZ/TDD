@@ -15,6 +15,13 @@ public class Convert {
 		h.put("7", "sept");
 		h.put("8", "huit");
 		h.put("9", "neuf");
+		h.put("10", "dix");
+		h.put("11", "onze");
+		h.put("12", "douze");
+		h.put("13", "treize");
+		h.put("14", "quatorze");
+		h.put("15", "quinze");
+		h.put("16", "seize");
 
 		return h.get(input);
 	}

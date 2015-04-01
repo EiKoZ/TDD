@@ -182,6 +182,72 @@ public class TestConvert {
 		Assert.assertEquals(expected, actual);
 	}
 	@Test
+	public void test_num2text_vingt () {
+		// Given
+		String input = "20";
+		String expected = "vingt";
+		Convert myConvert = new Convert();
+		// When
+		String actual = myConvert.num2text(input);
+		// Then
+		Assert.assertEquals(expected, actual);
+	}
+	@Test
+	public void test_num2text_trente () {
+		// Given
+		String input = "30";
+		String expected = "trente";
+		Convert myConvert = new Convert();
+		// When
+		String actual = myConvert.num2text(input);
+		// Then
+		Assert.assertEquals(expected, actual);
+	}
+	@Test
+	public void test_num2text_quarante () {
+		// Given
+		String input = "40";
+		String expected = "quarante";
+		Convert myConvert = new Convert();
+		// When
+		String actual = myConvert.num2text(input);
+		// Then
+		Assert.assertEquals(expected, actual);
+	}
+	@Test
+	public void test_num2text_cinquante () {
+		// Given
+		String input = "50";
+		String expected = "cinquante";
+		Convert myConvert = new Convert();
+		// When
+		String actual = myConvert.num2text(input);
+		// Then
+		Assert.assertEquals(expected, actual);
+	}
+	@Test
+	public void test_num2text_soixante () {
+		// Given
+		String input = "60";
+		String expected = "soixante";
+		Convert myConvert = new Convert();
+		// When
+		String actual = myConvert.num2text(input);
+		// Then
+		Assert.assertEquals(expected, actual);
+	}
+	@Test
+	public void test_num2text_cent () {
+		// Given
+		String input = "100";
+		String expected = "cent";
+		Convert myConvert = new Convert();
+		// When
+		String actual = myConvert.num2text(input);
+		// Then
+		Assert.assertEquals(expected, actual);
+	}
+	/*@Test
 	public void test_num2text_seize () {
 		// Given
 		String input = "16";
@@ -191,6 +257,7 @@ public class TestConvert {
 		String actual = myConvert.num2text(input);
 		// Then
 		Assert.assertEquals(expected, actual);
-	}
+	}*/
+	
 	
 }

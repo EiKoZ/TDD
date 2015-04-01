@@ -182,6 +182,29 @@ public class TestConvert {
 		Assert.assertEquals(expected, actual);
 	}
 	@Test
+	public void test_num2text_seize () {
+		// Given
+		String input = "16";
+		String expected = "seize";
+		Convert myConvert = new Convert();
+		// When
+		String actual = myConvert.num2text(input);
+		// Then
+		Assert.assertEquals(expected, actual);
+	}
+	@Test
+	public void test_num2text_dixsept () {
+		// Given
+		String input = "17";
+		String expected = "dix-sept";
+		Convert myConvert = new Convert();
+		// When
+		String actual = myConvert.num2text(input);
+		// Then
+		Assert.assertEquals(expected, actual);
+	}
+	
+	@Test
 	public void test_num2text_vingt () {
 		// Given
 		String input = "20";
@@ -237,6 +260,17 @@ public class TestConvert {
 		Assert.assertEquals(expected, actual);
 	}
 	@Test
+	public void test_num2text_quatre_vingt_dix_sept () {
+		// Given
+		String input = "97";
+		String expected = "quatre-vingt-dix-sept";
+		Convert myConvert = new Convert();
+		// When
+		String actual = myConvert.num2text(input);
+		// Then
+		Assert.assertEquals(expected, actual);
+	}
+	@Test
 	public void test_num2text_cent () {
 		// Given
 		String input = "100";
@@ -247,17 +281,38 @@ public class TestConvert {
 		// Then
 		Assert.assertEquals(expected, actual);
 	}
-	/*@Test
-	public void test_num2text_seize () {
+	@Test
+	public void test_num2text_mille () {
 		// Given
-		String input = "16";
-		String expected = "seize";
+		String input = "1000";
+		String expected = "mille";
 		Convert myConvert = new Convert();
 		// When
 		String actual = myConvert.num2text(input);
 		// Then
 		Assert.assertEquals(expected, actual);
-	}*/
-	
+	}
+	@Test
+	public void test_num2text_million () {
+		// Given
+		String input = "000000";
+		String expected = "million";
+		Convert myConvert = new Convert();
+		// When
+		String actual = myConvert.num2text(input);
+		// Then
+		Assert.assertEquals(expected, actual);
+	}
+	@Test
+	public void test_num2text_milliard () {
+		// Given
+		String input = "000000000";
+		String expected = "milliard";
+		Convert myConvert = new Convert();
+		// When
+		String actual = myConvert.num2text(input);
+		// Then
+		Assert.assertEquals(expected, actual);
+	}
 	
 }
